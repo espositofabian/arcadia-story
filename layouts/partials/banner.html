@@ -1,0 +1,16 @@
+<!-- Banner -->
+<section class="banner {{ .style }}">
+    <div class="content">
+    {{ with .logo }}
+        <img src="{{.}}" alt="Arcadia" style="max-height: 200px; width: auto; height: auto;">{{end}}
+        {{ with .title }}<strong><h1>{{ . }}</h1></strong>{{ end }}
+        {{ with .subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
+        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .button }}<ul class="actions stacked">
+            <li><a href="{{ .link }}" class="button primary large wide smooth-scroll-middle">{{ .label }}</a></li>
+        </ul>{{ end }}
+    </div>
+    {{ with .image }}<div class="image">
+        <img src="{{.}}" alt="Casa per gli studenti" />
+    </div>{{end}}
+</section>

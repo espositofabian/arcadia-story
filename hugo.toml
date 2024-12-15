@@ -17,7 +17,7 @@ relativeURLs = "true"
 
 # Remote
 baseURL = "https://github.com/espositofabian/arcadia-story"
-publishDir = "docs"
+publishDir = "public"
 
 
 ## -----------------------------------------------
